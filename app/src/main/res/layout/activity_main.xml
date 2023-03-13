@@ -24,7 +24,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.3" tools:ignore="SpeakableTextPresentCheck"/>
+            app:layout_constraintVertical_bias="0.3"
+            tools:ignore="SpeakableTextPresentCheck"/>
     <Button
             android:id="@+id/mainToLoginBtn"
             android:layout_width="wrap_content"
@@ -35,7 +36,8 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintHorizontal_bias="0.305"
             app:layout_constraintVertical_bias="0.721"
-            android:text="@string/login_btn" app:backgroundTint="@color/wordle_green"
+            android:text="@string/login_btn"
+            app:backgroundTint="@color/wordle_green"
             android:background="@color/wordle_yellow"/>
     <Button
             android:id="@+id/mainToStatsBtn"
@@ -47,7 +49,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.722"
             app:layout_constraintVertical_bias="0.721"
-            android:text="@string/stats_btn" app:backgroundTint="@color/wordle_green"
+            android:text="@string/stats_btn"
+            app:backgroundTint="@color/wordle_green"
             android:background="@color/wordle_yellow"/>
     <Button
             android:id="@+id/mainToHowToBtn"
@@ -59,7 +62,8 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintVertical_bias="0.862"
-            android:text="@string/how_to_btn" app:backgroundTint="@color/wordle_green"
+            android:text="@string/how_to_btn"
+            app:backgroundTint="@color/wordle_green"
             android:background="@color/wordle_yellow"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
