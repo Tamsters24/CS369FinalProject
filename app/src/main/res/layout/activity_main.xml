@@ -37,8 +37,8 @@
             app:layout_constraintHorizontal_bias="0.305"
             app:layout_constraintVertical_bias="0.721"
             android:text="@string/login_btn"
-            app:backgroundTint="@color/wordle_green"
-            android:background="@color/wordle_yellow"/>
+            app:backgroundTint="@color/wordle_yellow"
+            android:background="@drawable/button_box"/>
     <Button
             android:id="@+id/mainToStatsBtn"
             android:layout_width="wrap_content"
@@ -50,8 +50,8 @@
             app:layout_constraintHorizontal_bias="0.722"
             app:layout_constraintVertical_bias="0.721"
             android:text="@string/stats_btn"
-            app:backgroundTint="@color/wordle_green"
-            android:background="@color/wordle_yellow"/>
+            app:backgroundTint="@color/wordle_yellow"
+            android:background="@drawable/button_box"/>
     <Button
             android:id="@+id/mainToHowToBtn"
             android:layout_width="wrap_content"

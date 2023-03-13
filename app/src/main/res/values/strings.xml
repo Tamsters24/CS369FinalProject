@@ -14,4 +14,18 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <string name="stats">STATISTICS</string>
+    <string name="games_played">games played</string>
+    <string name="win_percentage">win %</string>
+    <string name="current_streak">current\nstreak</string>
+    <string name="max_streak">max\nstreak</string>
+    <string name="guess_distrb">GUESS DISTRIBUTION</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+
 </resources>
