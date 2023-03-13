@@ -124,20 +124,23 @@
                     android:background="@drawable/table_border_background"
                     android:layout_weight="1"/>
         </TableRow>
+        <TableRow android:id="@+id/wordle_label"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+            <ImageView
+                    android:id="@+id/wordle_stats_screen"
+                    android:layout_width="290dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/wordlelogin"/>
+        </TableRow>
     </TableLayout>
-    <ImageView
-            android:id="@+id/wordle_stats_screen"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/wordlelogin"
-            />
     <TextView
             android:id="@+id/stat_distribution"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/guess_distrb"
             android:gravity="center_horizontal"
-            android:textSize="40sp"/>
+            android:textSize="30sp"/>
 
     <TableLayout
             android:layout_width="match_parent"
@@ -152,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/one"
                     android:gravity="center_horizontal"
-                    android:textSize="30sp"/>
+                    android:textSize="25sp"/>
             <ProgressBar
                     android:id="@+id/one_guess_win_bar"
                     style="?android:attr/progressBarStyleHorizontal"
@@ -169,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/two"
                     android:gravity="center_horizontal"
-                    android:textSize="30sp"/>
+                    android:textSize="25sp"/>
             <ProgressBar
                     android:id="@+id/two_guess_win_bar"
                     style="?android:attr/progressBarStyleHorizontal"
@@ -183,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/three"
                     android:gravity="center_horizontal"
-                    android:textSize="30sp"/>
+                    android:textSize="25sp"/>
             <ProgressBar
                     android:id="@+id/three_guess_win_bar"
                     style="?android:attr/progressBarStyleHorizontal"
@@ -197,7 +200,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/four"
                     android:gravity="center_horizontal"
-                    android:textSize="30sp"/>
+                    android:textSize="25sp"/>
             <ProgressBar
                     android:id="@+id/four_guess_win_bar"
                     style="?android:attr/progressBarStyleHorizontal"
@@ -211,7 +214,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/five"
                     android:gravity="center_horizontal"
-                    android:textSize="30sp"/>
+                    android:textSize="25sp"/>
             <ProgressBar
                     android:id="@+id/five_guess_win_bar"
                     style="?android:attr/progressBarStyleHorizontal"
@@ -225,7 +228,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/six"
                     android:gravity="center_horizontal"
-                    android:textSize="30sp"/>
+                    android:textSize="25sp"/>
             <ProgressBar
                     android:id="@+id/six_guess_win_bar"
                     style="?android:attr/progressBarStyleHorizontal"

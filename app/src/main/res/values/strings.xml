@@ -28,4 +28,13 @@
     <string name="five">5</string>
     <string name="six">6</string>
 
+    <string name="how_to_header">HOW TO PLAY</string>
+    <string name="how_to_guess">Guess the Wordle in 6 tries.</string>
+    <string name="how_to_example">Examples</string>
+    <string name="how_to_bullets1">\u2022 Each guess must be a valid 5-letter word.</string>
+    <string name="how_to_bullets2">\u2022 The color of the tiles will change to show how close your guess was to the word.</string>
+    <string name="ex_1">W is in the word and in the correct spot.</string>
+    <string name="ex_2">I is in the word but in the wrong spot.</string>
+    <string name="ex_3">U is not in the word in any spot.</string>
+
 </resources>

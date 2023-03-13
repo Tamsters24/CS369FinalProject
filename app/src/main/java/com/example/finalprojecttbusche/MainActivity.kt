@@ -23,5 +23,12 @@ class MainActivity : AppCompatActivity() {
             val mainToStatsIntent = Intent(this, PlayerStats::class.java)
             startActivity(mainToStatsIntent)
         }
+
+        // Button
+        // Navigate to How to Play: activity_how_to_play.xml & HowToPlay.kt
+        findViewById<Button>(R.id.mainToHowToBtn).setOnClickListener {
+            val mainToHowToIntent = Intent(this, HowToPlay::class.java)
+            startActivity(mainToHowToIntent)
+        }
     }
 }
