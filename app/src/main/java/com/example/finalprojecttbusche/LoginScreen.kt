@@ -11,7 +11,7 @@ class LoginScreen : AppCompatActivity() {
         setContentView(R.layout.activity_login_screen)
 
         // Button
-        // Navigate to Login Screen: activity_main.xml & MainActivity.kt
+        // Navigate to Main Activity Screen: activity_main.xml & MainActivity.kt
         findViewById<ImageButton>(R.id.loginToMainBtn).setOnClickListener {
             val loginToMainIntent = Intent(this, MainActivity::class.java)
             startActivity(loginToMainIntent)

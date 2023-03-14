@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +30,13 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.mainToHowToBtn).setOnClickListener {
             val mainToHowToIntent = Intent(this, HowToPlay::class.java)
             startActivity(mainToHowToIntent)
+        }
+
+        // Image Button
+        // Navigate to Game: activity_game_play.xml & GamePlay.kt
+        findViewById<ImageButton>(R.id.mainToGameBtn).setOnClickListener {
+            val mainToGameIntent = Intent(this, GamePlay::class.java)
+            startActivity(mainToGameIntent)
         }
     }
 }

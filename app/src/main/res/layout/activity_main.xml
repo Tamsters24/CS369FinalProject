@@ -14,10 +14,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintEnd_toEndOf="parent"/>
     <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/mainToGameBtn"
             app:srcCompat="@drawable/wordle"
             android:layout_width="241dp"
             android:layout_height="262dp"
@@ -29,20 +28,21 @@
             tools:ignore="SpeakableTextPresentCheck"/>
     <Button
             android:id="@+id/mainToLoginBtn"
-            android:layout_width="wrap_content"
+            android:text="@string/login_btn"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.263"
             app:layout_constraintVertical_bias="0.664"
-            android:text="@string/login_btn"
             app:backgroundTint="@color/wordle_yellow"
             android:background="@drawable/button_box"/>
     <Button
             android:id="@+id/mainToStatsBtn"
-            android:layout_width="wrap_content"
+            android:text="@string/stats_btn"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,11 +50,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.736"
             app:layout_constraintVertical_bias="0.664"
-            android:text="@string/stats_btn"
             app:backgroundTint="@color/wordle_yellow"
             android:background="@drawable/button_box"/>
     <Button
             android:id="@+id/mainToHowToBtn"
+            android:text="@string/how_to_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -63,7 +63,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintVertical_bias="0.8"
-            android:text="@string/how_to_btn"
             app:backgroundTint="@color/wordle_yellow"
             android:background="@drawable/button_box"/>
 

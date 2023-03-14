@@ -17,116 +17,113 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/loginBackground"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.131"
             app:layout_constraintVertical_bias="0.09"
             android:background="@null"/>
     <TextView
             android:id="@+id/stats_header"
+            android:text="@string/stats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/stats"
             android:gravity="center_horizontal"
             android:textSize="40sp"/>
     <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="25dp">
-    <TableRow android:id="@+id/stat_labels"
-                  android:layout_width="match_parent"
+            android:padding="25dp"
+            android:background="@drawable/game_table_border_background">
+        <TableRow android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:weightSum="4">
             <TextView
                     android:id="@+id/games_played"
+                    android:text="@string/games_played"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/games_played"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:background="@drawable/table_border_background"
-                    android:layout_weight="1"/>
+                    android:background="@drawable/stats_table_border_background"/>
             <TextView
                     android:id="@+id/win_percent"
+                    android:text="@string/win_percentage"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="@string/win_percentage"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:background="@drawable/table_border_background"
-                    android:layout_weight="1"/>
+                    android:background="@drawable/stats_table_border_background"/>
             <TextView
                     android:id="@+id/curr_streak"
+                    android:text="@string/current_streak"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/current_streak"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:background="@drawable/table_border_background"
-                    android:layout_weight="1"/>
+                    android:background="@drawable/stats_table_border_background"/>
             <TextView
                     android:id="@+id/max_streak"
+                    android:text="@string/max_streak"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/max_streak"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:background="@drawable/table_border_background"
-                    android:layout_weight="1"/>
+                    android:background="@drawable/stats_table_border_background"/>
         </TableRow>
         <TableRow android:id="@+id/stat_values"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:weightSum="4"
-                  >
-        <TextView
+                  android:weightSum="4">
+            <EditText
                     android:id="@+id/games_played_val"
+                    android:text=""
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:text="1"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:background="@drawable/table_border_background"
-                    android:layout_weight="1"/>
-            <TextView
+                    android:background="@drawable/game_table_border_background"/>
+            <EditText
                     android:id="@+id/win_percentage_val"
+                    android:text=""
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:text="100%"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:background="@drawable/table_border_background"
-                    android:layout_weight="1"/>
-            <TextView
+                    android:background="@drawable/game_table_border_background"/>
+            <EditText
                     android:id="@+id/curr_streak_val"
+                    android:text=""
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:text="1"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:background="@drawable/table_border_background"
-                    android:layout_weight="1"/>
-            <TextView
+                    android:background="@drawable/game_table_border_background"/>
+            <EditText
                     android:id="@+id/max_streak_val"
+                    android:text=""
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:text="1"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:background="@drawable/table_border_background"
-                    android:layout_weight="1"/>
+                    android:background="@drawable/game_table_border_background"/>
         </TableRow>
-        <TableRow android:id="@+id/wordle_label"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent">
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <ImageView
                     android:id="@+id/wordle_stats_screen"
                     android:layout_width="290dp"
@@ -136,41 +133,37 @@
     </TableLayout>
     <TextView
             android:id="@+id/stat_distribution"
+            android:text="@string/guess_distrb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/guess_distrb"
             android:gravity="center_horizontal"
             android:textSize="30sp"/>
-
     <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
         <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
                     android:id="@+id/one_guess"
+                    android:text="@string/one"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/one"
                     android:gravity="center_horizontal"
                     android:textSize="25sp"/>
             <ProgressBar
                     android:id="@+id/one_guess_win_bar"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content"/>
         </TableRow>
         <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
                     android:id="@+id/two_guess"
+                    android:text="@string/two"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/two"
                     android:gravity="center_horizontal"
                     android:textSize="25sp"/>
             <ProgressBar
@@ -182,9 +175,9 @@
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
                     android:id="@+id/three_guess"
+                    android:text="@string/three"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/three"
                     android:gravity="center_horizontal"
                     android:textSize="25sp"/>
             <ProgressBar
@@ -196,9 +189,9 @@
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
                     android:id="@+id/four_guess"
+                    android:text="@string/four"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/four"
                     android:gravity="center_horizontal"
                     android:textSize="25sp"/>
             <ProgressBar
@@ -210,9 +203,9 @@
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
                     android:id="@+id/five_guess"
+                    android:text="@string/five"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/five"
                     android:gravity="center_horizontal"
                     android:textSize="25sp"/>
             <ProgressBar
@@ -224,9 +217,9 @@
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
                     android:id="@+id/six_guess"
+                    android:text="@string/six"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/six"
                     android:gravity="center_horizontal"
                     android:textSize="25sp"/>
             <ProgressBar
