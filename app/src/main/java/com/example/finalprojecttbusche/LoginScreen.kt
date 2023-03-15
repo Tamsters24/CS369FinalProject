@@ -39,7 +39,7 @@ class LoginScreen : AppCompatActivity() {
         // Button
         // Navigate to Create Account Screen: activity_create_account.xml & CreateAccount.kt
         findViewById<Button>(R.id.loginToCreateAcctBtn).setOnClickListener {
-            val loginToCreateAcctIntent = Intent(this, MainActivity::class.java)
+            val loginToCreateAcctIntent = Intent(this, CreateAccount::class.java)
             startActivity(loginToCreateAcctIntent)
         }
 
@@ -55,34 +55,33 @@ class LoginScreen : AppCompatActivity() {
         findViewById<Button>(R.id.acctLoginBtn).setOnClickListener {
             userEmail = findViewById<EditText>(R.id.loginEmail).text.toString()
             userPassword = findViewById<EditText>(R.id.loginPassword).text.toString()
-            login(userEmail, userPassword)
+            if (userEmail == "" || userPassword == "") {
+                Toast.makeText(baseContext, "Missing User Login Info",
+                    Toast.LENGTH_SHORT).show()
+            } else
+                login(userEmail, userPassword)
         }
     }
 
     private fun login(email: String, password: String) {
-        if (email == "" || password == "") { /* Do nothing */
-            Toast.makeText(baseContext, "Something's wrong",
-                Toast.LENGTH_SHORT).show()}
-        else {
-            FirebaseAuth.getInstance().signInWithEmailAndPassword(userEmail, userPassword)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        Log.d(TAG, "signInWithEmail:success")
-                        val user = FirebaseAuth.getInstance().currentUser
-                        Toast.makeText(baseContext, "Welcome to Wordle!",
-                            Toast.LENGTH_SHORT).show()
-                        updateUI(user)
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Log.d(TAG, "signInWithEmail:success")
+                    val user = FirebaseAuth.getInstance().currentUser
+                    Toast.makeText(baseContext, "Welcome to Wordle!",
+                        Toast.LENGTH_SHORT).show()
+                    updateUI(user)
 
-                        val returnToMainIntent = Intent(this, MainActivity::class.java)
-                        startActivity(returnToMainIntent)
-                    } else {
-                        Log.w(TAG, "signInWithEmail:failure", task.exception)
-                        Toast.makeText(baseContext, "Authentication failed.",
-                            Toast.LENGTH_SHORT).show()
-                        updateUI(null)
-                    }
+                    val returnToMainIntent = Intent(this, MainActivity::class.java)
+                    startActivity(returnToMainIntent)
+                } else {
+                    Log.w(TAG, "signInWithEmail:failure", task.exception)
+                    Toast.makeText(baseContext, "Authentication failed.",
+                        Toast.LENGTH_SHORT).show()
+                    updateUI(null)
                 }
-        }
+            }
     }
 
     private fun updateUI(user: FirebaseUser?) {
