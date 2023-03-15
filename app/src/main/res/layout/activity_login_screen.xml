@@ -6,19 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".LoginScreen"
-        android:orientation="vertical">
-
-    <ImageView
-            android:id="@+id/loginBackground"
-            app:srcCompat="@drawable/wallpaper"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintVertical_bias="0.0"/>
+        android:orientation="vertical"
+        android:background="@color/wordle_background">
     <ImageButton
             android:id="@+id/loginToMainBtn"
             app:srcCompat="@drawable/ic_twotone_arrow_circle_left_24"
@@ -42,20 +31,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.306"
-            app:layout_constraintHorizontal_bias="0.505"/>
+            app:layout_constraintVertical_bias="0.25"/>
     <EditText
             android:id="@+id/loginEmail"
             android:drawableStart="@drawable/ic_twotone_account_box_24"
             android:inputType="textEmailAddress"
             android:hint="@string/prompt_email"
-            android:layout_width="250dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.506"
+            app:layout_constraintVertical_bias="0.45"
             android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
@@ -65,19 +53,19 @@
             android:drawableStart="@drawable/ic_twotone_lock_24"
             android:inputType="textPassword"
             android:hint="@string/prompt_password"
-            android:layout_width="250dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.695"
+            app:layout_constraintVertical_bias="0.6"
             android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
             android:ems="10"/>
     <Button
-            android:id="@+id/createAccountBtn"
+            android:id="@+id/loginToCreateAcctBtn"
             android:text="@string/action_sign_in"
             android:layout_width="155sp"
             android:layout_height="35sp"
@@ -85,13 +73,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.819"
-            app:layout_constraintVertical_bias="0.556"
+            app:layout_constraintHorizontal_bias="0.82"
             android:textSize="11sp"
             android:textColor="@color/black"
             app:backgroundTint="@color/wordle_yellow"/>
     <Button
-            android:id="@+id/button"
+            android:id="@+id/forgotPwdBtn"
             android:text="@string/action_forgot_pwd"
             android:layout_width="155sp"
             android:layout_height="35sp"
@@ -99,9 +86,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.819"
-            app:layout_constraintVertical_bias="0.745"
+            app:layout_constraintHorizontal_bias="0.82"
+            app:layout_constraintVertical_bias="0.65"
             android:textSize="11sp"
             android:textColor="@color/black"
             app:backgroundTint="@color/wordle_yellow"/>
+    <Button
+            android:id="@+id/acctLoginBtn"
+            android:text="@string/submit_btn"
+            android:layout_width="155sp"
+            android:layout_height="50sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.8"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/wordle_green"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

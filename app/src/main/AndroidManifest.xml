@@ -10,6 +10,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.FinalProjectTBusche">
         <activity
+                android:name=".CreateAccount"
+                android:exported="true"/>
+        <activity
                 android:name=".GamePlay"
                 android:exported="true"/>
         <activity

@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">FinalProjectTBusche</string>
+    <string name="app_name">CS 369 WORDLE</string>
+    <string name="game_btn">click image to begin game</string>
     <string name="login_btn">LOGIN</string>
     <string name="stats_btn">STATS</string>
     <string name="how_to_btn">HOW TO PLAY</string>
@@ -9,6 +10,7 @@
     <string name="prompt_password">password</string>
     <string name="action_sign_in">register here</string>
     <string name="action_forgot_pwd">forgot password</string>
+    <string name="submit_btn">LOGIN</string>
 
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>

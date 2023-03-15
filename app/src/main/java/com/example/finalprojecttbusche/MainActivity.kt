@@ -11,6 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Image Button
+        // Navigate to Game: activity_game_play.xml & GamePlay.kt
+        findViewById<ImageButton>(R.id.mainToGameBtn).setOnClickListener {
+            val mainToGameIntent = Intent(this, GamePlay::class.java)
+            startActivity(mainToGameIntent)
+        }
+
         // Button
         // Navigate to Login Screen: activity_login_screen.xml & LoginScreen.kt
         findViewById<Button>(R.id.mainToLoginBtn).setOnClickListener {
@@ -30,13 +37,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.mainToHowToBtn).setOnClickListener {
             val mainToHowToIntent = Intent(this, HowToPlay::class.java)
             startActivity(mainToHowToIntent)
-        }
-
-        // Image Button
-        // Navigate to Game: activity_game_play.xml & GamePlay.kt
-        findViewById<ImageButton>(R.id.mainToGameBtn).setOnClickListener {
-            val mainToGameIntent = Intent(this, GamePlay::class.java)
-            startActivity(mainToGameIntent)
         }
     }
 }

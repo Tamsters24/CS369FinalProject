@@ -9,6 +9,7 @@
     <color name="wordle_yellow">#CCB545</color>
     <color name="wordle_grey">#777C7E</color>
     <color name="keyboard_grey">#D3D6DA</color>
+    <color name="wordle_background">#333732</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
