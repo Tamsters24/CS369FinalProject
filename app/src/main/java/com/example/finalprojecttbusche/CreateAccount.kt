@@ -14,7 +14,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
 class CreateAccount : AppCompatActivity() {
-    private lateinit var wordleAcctCreate: FirebaseAuth
     private var newUserEmail: String = ""
     private var newUserPassword1: String = ""
     private var newUserPassword2: String = ""

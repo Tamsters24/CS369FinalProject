@@ -25,8 +25,8 @@ class LoginScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_screen)
-        wordleLogin = Firebase.auth
 
+        wordleLogin = Firebase.auth
         FirebaseApp.initializeApp(this)
 
         // Button
@@ -46,8 +46,8 @@ class LoginScreen : AppCompatActivity() {
         // Button
         // Forgot Password Action
         findViewById<Button>(R.id.forgotPwdBtn).setOnClickListener {
-            //val loginToMainIntent = Intent(this, MainActivity::class.java)
-            //startActivity(loginToMainIntent)
+            val loginForgotPwdIntent = Intent(this, ForgotPassword::class.java)
+            startActivity(loginForgotPwdIntent)
         }
 
         // Button
@@ -69,7 +69,7 @@ class LoginScreen : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "signInWithEmail:success")
                     val user = FirebaseAuth.getInstance().currentUser
-                    Toast.makeText(baseContext, "Welcome to Wordle!",
+                    Toast.makeText(baseContext, "Login Successful. Welcome to Wordle!",
                         Toast.LENGTH_SHORT).show()
                     updateUI(user)
 

@@ -18,6 +18,11 @@
     <string name="new_acct_password2">reenter password</string>
     <string name="new_acct_register">COMPLETE REGISTRATION</string>
 
+    <string name="forgot_pwd">RESET PASSWORD</string>
+    <string name="forgot_msg1">forgot your password? click the button below</string>
+    <string name="forgot_msg2">then check your email to reset password</string>
+    <string name="forgot_email">SEND EMAIL</string>
+
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>

@@ -10,13 +10,13 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.FinalProjectTBusche">
         <activity
+                android:name=".ForgotPassword"
+                android:exported="true"/>
+        <activity
                 android:name=".CreateAccount"
                 android:exported="true"/>
         <activity
                 android:name=".GamePlay"
-                android:exported="true"/>
-        <activity
-                android:name=".game_play"
                 android:exported="true"/>
         <activity
                 android:name=".HowToPlay"
@@ -27,10 +27,6 @@
         <activity
                 android:name=".LoginScreen"
                 android:exported="true"/>
-        <activity
-                android:name=".ui.login.LoginActivity"
-                android:exported="true"
-                android:label="@string/title_activity_login"/>
         <activity
                 android:name=".MainActivity"
                 android:exported="true">

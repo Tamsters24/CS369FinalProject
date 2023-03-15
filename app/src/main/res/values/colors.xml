@@ -11,6 +11,7 @@
     <color name="keyboard_grey">#D3D6DA</color>
     <color name="wordle_background">#333732</color>
     <color name="register_background">#FF322D17</color>
+    <color name="forgot_pwd_background">#EB1F221F</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
