@@ -13,293 +13,368 @@
     <ImageButton
             android:id="@+id/gameToMainBtn"
             app:srcCompat="@drawable/ic_twotone_arrow_circle_left_24"
-            android:layout_width="54dp"
-            android:layout_height="46dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:background="@null"/>
     <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="36dp"
-            android:weightSum="6">
+            android:padding="1dp">
         <TableRow android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:layout_weight="1"
-                  android:weightSum="5">
+                  android:gravity="center"
+                  android:layout_weight="1">
             <EditText
                     android:id="@+id/guess1_l1"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess1_l2"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess1_l3"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess1_l4"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess1_l5"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
         </TableRow>
         <TableRow android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:layout_weight="1"
-                  android:weightSum="5">
+                  android:gravity="center"
+                  android:layout_weight="1">
             <EditText
                     android:id="@+id/guess2_l1"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess2_l2"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess2_l3"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess2_l4"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess2_l5"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
         </TableRow>
         <TableRow android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:layout_weight="1"
-                  android:weightSum="5">
+                  android:gravity="center"
+                  android:layout_weight="1">
             <EditText
                     android:id="@+id/guess3_l1"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess3_l2"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess3_l3"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess3_l4"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess3_l5"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
         </TableRow>
         <TableRow android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:layout_weight="1"
-                  android:weightSum="5">
+                  android:gravity="center"
+                  android:layout_weight="1">
             <EditText
                     android:id="@+id/guess4_l1"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess4_l2"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess4_l3"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess4_l4"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess4_l5"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
-                    android:background="@drawable/game_table_border_background"/>        </TableRow>
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/game_table_border_background"/>
+        </TableRow>
         <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:weightSum="5">
+                android:gravity="center"
+                android:layout_weight="1">
             <EditText
                     android:id="@+id/guess5_l1"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess5_l2"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess5_l3"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess5_l4"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess5_l5"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
-                    android:background="@drawable/game_table_border_background"/>        </TableRow>
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/game_table_border_background"/>
+        </TableRow>
         <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:weightSum="5">
+                android:gravity="center"
+                android:layout_weight="1">
             <EditText
                     android:id="@+id/guess6_l1"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess6_l2"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess6_l3"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess6_l4"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
             <EditText
                     android:id="@+id/guess6_l5"
                     android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="40sp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@drawable/game_table_border_background"/>
         </TableRow>
     </TableLayout>
+    <ImageView
+            android:id="@+id/loginTitle"
+            app:srcCompat="@drawable/wordlelogin"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
     <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:padding="2dp">
         <TableRow android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:paddingTop="15dp"
+                  android:paddingTop="50dp"
                   android:paddingBottom="15dp">
             <ImageButton
                     android:id="@+id/buttonQ"
@@ -311,7 +386,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonW"
                     app:srcCompat="@drawable/letter_w"
@@ -322,7 +398,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonE"
                     app:srcCompat="@drawable/letter_e"
@@ -333,7 +410,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonR"
                     app:srcCompat="@drawable/letter_r"
@@ -344,7 +422,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonT"
                     app:srcCompat="@drawable/letter_t"
@@ -355,7 +434,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonY"
                     app:srcCompat="@drawable/letter_y"
@@ -366,7 +446,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonU"
                     app:srcCompat="@drawable/letter_u"
@@ -377,7 +458,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonI"
                     app:srcCompat="@drawable/letter_i"
@@ -388,7 +470,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonO"
                     app:srcCompat="@drawable/letter_o"
@@ -399,7 +482,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonP"
                     app:srcCompat="@drawable/letter_p"
@@ -410,7 +494,8 @@
                     android:textSize="3pt"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
         </TableRow>
         <TableRow android:layout_width="match_parent"
                   android:layout_height="match_parent"
@@ -424,7 +509,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonS"
                     app:srcCompat="@drawable/letter_s"
@@ -434,7 +520,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonD"
                     app:srcCompat="@drawable/letter_d"
@@ -444,7 +531,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonF"
                     app:srcCompat="@drawable/letter_f"
@@ -454,7 +542,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonG"
                     app:srcCompat="@drawable/letter_g"
@@ -464,7 +553,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonH"
                     app:srcCompat="@drawable/letter_h"
@@ -474,7 +564,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonJ"
                     app:srcCompat="@drawable/letter_j"
@@ -484,7 +575,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonK"
                     app:srcCompat="@drawable/letter_k"
@@ -494,7 +586,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonL"
                     app:srcCompat="@drawable/letter_l"
@@ -504,7 +597,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
         </TableRow>
         <TableRow android:layout_width="match_parent"
                   android:layout_height="match_parent"
@@ -527,7 +621,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonX"
                     app:srcCompat="@drawable/letter_x"
@@ -536,7 +631,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonC"
                     app:srcCompat="@drawable/letter_c"
@@ -545,7 +641,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonV"
                     app:srcCompat="@drawable/letter_v"
@@ -554,7 +651,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonB"
                     app:srcCompat="@drawable/letter_b"
@@ -563,7 +661,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonN"
                     app:srcCompat="@drawable/letter_n"
@@ -572,7 +671,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonM"
                     app:srcCompat="@drawable/letter_m"
@@ -581,7 +681,8 @@
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/keyboard_grey"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="keyLetter"/>
             <ImageButton
                     android:id="@+id/buttonBack"
                     app:srcCompat="@drawable/ic_twotone_backspace_24"
@@ -589,8 +690,10 @@
                     android:layout_height="35dp"
                     android:layout_margin="1dp"
                     android:textColor="@color/black"
+                    android:gravity="center"
                     app:backgroundTint="@color/white"
-                    android:background="@drawable/key_box"/>
+                    android:background="@drawable/key_box"
+                    android:onClick="deleteLetter"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>
