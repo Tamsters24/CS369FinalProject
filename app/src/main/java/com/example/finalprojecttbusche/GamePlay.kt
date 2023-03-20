@@ -1,15 +1,14 @@
 package com.example.finalprojecttbusche
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.google.firebase.auth.FirebaseUser
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
