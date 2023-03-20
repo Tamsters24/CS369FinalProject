@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseUser
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -64,6 +65,7 @@ class GamePlay : AppCompatActivity() {
             word = bufferedReader.readLine()
             println(word)
         }
+        bufferedReader.close()
 
         // Use a random value to pick a word from the list
         val randomValue = (0..wordleWords.size).random()
@@ -532,4 +534,5 @@ class GamePlay : AppCompatActivity() {
         else
             editText.setBackgroundDrawable(wrongLetterWrongSpot)
     }
+
 }

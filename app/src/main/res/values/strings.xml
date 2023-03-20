@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CS 369 WORDLE</string>
+    <string name="app_name">CS 369 WORDLE TBUSCHE</string>
     <string name="game_btn">click image to begin game</string>
     <string name="login_btn">LOGIN</string>
     <string name="stats_btn">STATS</string>
