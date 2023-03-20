@@ -71,8 +71,8 @@ class GamePlay : AppCompatActivity() {
         wordle = wordleWords[randomValue]
         wordle = wordle.uppercase()
 
-        // Toast for testing while creating, uncomment if you want to cheat (haha).
-        Toast.makeText(baseContext, "The correct word is $wordle", Toast.LENGTH_SHORT).show()
+        //Toast for testing while creating, uncomment if you want to cheat (haha).
+        //Toast.makeText(baseContext, "The correct word is $wordle", Toast.LENGTH_SHORT).show()
     }
 
     // The game keyboard. ImageButtons are used because normal buttons cannot
