@@ -8,16 +8,20 @@ import android.view.WindowManager
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
+import java.io.BufferedReader
+import java.io.InputStreamReader
 
 class GamePlay : AppCompatActivity() {
     private var cell = 0
     private var row = 1
     private var guessString: String = ""
-    private var guessNum: Int = 0
+    private var wordle: String = ""
+    private var guessNum = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_play)
+
         // Disable user keyboard. An on-screen keyboard used.
         window.setFlags(
             WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM,
@@ -29,6 +33,27 @@ class GamePlay : AppCompatActivity() {
             val gameToMainIntent = Intent(this, MainActivity::class.java)
             startActivity(gameToMainIntent)
         }
+
+        // Retrieve a random word for from sgb-words.txt for game
+        randomWordle()
+    }
+
+    private fun randomWordle() {
+        // sgb-words.txt located in app/src/main/assets directory
+        val inStream = assets.open("sgb-words.txt")
+        val bufferedReader = BufferedReader(InputStreamReader(inStream))
+        val wordleWords = mutableListOf<String>()                // create a list of the words
+        var word = bufferedReader.readLine()
+        while (word != null) {                                   // populate the list with each word
+            wordleWords.add(word)
+            word = bufferedReader.readLine()
+        }
+        val randomValue = (0..wordleWords.size).random()    // Use a random value to pick a word
+        wordle = wordleWords[randomValue]
+        wordle = wordle.uppercase()
+
+        // Toast for testing while creating
+        Toast.makeText(baseContext, "The correct word is $wordle", Toast.LENGTH_SHORT).show()
     }
 
     fun keyLetter(view: View) {
@@ -428,8 +453,11 @@ class GamePlay : AppCompatActivity() {
                 }
             }
         }
-
         if (guessString.length < 5) { /* do nothing */ }
+        else if (guessString == wordle) {
+            Toast.makeText(baseContext, "You Win!", Toast.LENGTH_SHORT).show()
+            row = 7
+        }
         else {
             Toast.makeText(baseContext, guessString, Toast.LENGTH_SHORT).show()
             row++
